@@ -2,13 +2,21 @@ package main
 
 import "fmt"
 import "strconv"
-import "github.com/garclak/gflgo/gflconst"
+import "github.com/garclak/gflgo/gflConst"
 
 
 
 func main() {
-	l := gflconst.NewLogonType()
-	a := l.Type("normal")
-	//fmt.Println(a)
-	fmt.Printf("Type: " + strconv.Itoa(a) + "\n")
+	l := gflConst.NewStateC()
+	fmt.Printf("Type: " + strconv.Itoa(l.Const("admin")) + "\n")
 }
+
+/* Console Text Entry
+import "os"
+import "bufio"
+
+reader := bufio.NewReader(os.Stdin)
+fmt.Print("Enter text: ")
+text, _ := reader.ReadString('\n')
+fmt.Println(text)
+*/
