@@ -1,10 +1,10 @@
 package gflConst
 
-type FlightStatusC struct {
+type StatusC struct {
 	elements map[string]int
 }
 
-func (l *FlightStatusC) Const(ref string) int {
+func (l *StatusC) Const(ref string) int {
 	if ret, ok := l.elements[ref]; ok {
 		return ret
 	} else {
@@ -12,8 +12,8 @@ func (l *FlightStatusC) Const(ref string) int {
 	}
 }
 
-func NewFlightStatusC() *FlightStatusC {
-	lt := new(FlightStatusC)
+func NewStatusC() *StatusC {
+	lt := new(StatusC)
 	lt.elements = make(map[string]int)
 	lt.elements["planning"] = 10
 	lt.elements["active"] = 20
