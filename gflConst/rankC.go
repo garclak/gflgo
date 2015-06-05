@@ -15,9 +15,9 @@ func (l *RankC) Const(ref string) int {
 func NewRankC() *RankC {
 	lt := new(RankC)
 	lt.elements = make(map[string]int)
-	lt.elements["ramp operator"] = 10
-	lt.elements["flight engineer"] = 20
-	lt.elements["first officer"] = 30
-	lt.elements["captain"] = 40
+	lt.elements["ramp operator"] = 500
+	lt.elements["flight engineer"] = 510
+	lt.elements["first officer"] = 520
+	lt.elements["captain"] = 530
 	return lt
 }

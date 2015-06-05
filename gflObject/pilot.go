@@ -7,7 +7,7 @@ type Pilot struct {
 	Callsign : string
 	PasswordHash : string
 	PasswordSalt : string
-	Permissions : int //Const
+	Permissions : int //logonC
 	MinutesDay : int
 	MinutesNight : int
 	TotalCompletedFlights : string

@@ -15,10 +15,10 @@ func (l *EngineC) Const(ref string) int {
 func NewEngineC() *EngineC {
 	lt := new(EngineC)
 	lt.elements = make(map[string]int)
-	lt.elements["piston"] = 10
-	lt.elements["turboprop"] = 20
-	lt.elements["turboshaft"] = 30
-	lt.elements["jet"] = 40
-	lt.elements["turbofan"] = 50
+	lt.elements["piston"] = 100
+	lt.elements["turboprop"] = 110
+	lt.elements["turboshaft"] = 120
+	lt.elements["jet"] = 130
+	lt.elements["turbofan"] = 140
 	return lt
 }

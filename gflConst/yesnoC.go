@@ -15,7 +15,7 @@ func (l *YesNoC) Const(ref string) int {
 func NewYesNoC() *YesNoC {
 	lt := new(YesNoC)
 	lt.elements = make(map[string]int)
-	lt.elements["yes"] = 10
-	lt.elements["no"] = 20
+	lt.elements["yes"] = 1200
+	lt.elements["no"] = 1210
 	return lt
 }

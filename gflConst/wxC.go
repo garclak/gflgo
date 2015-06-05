@@ -15,11 +15,11 @@ func (l *WxC) Const(ref string) int {
 func NewWxC() *WxC {
 	lt := new(WxC)
 	lt.elements = make(map[string]int)
-	lt.elements["VFR"] = 10
-	lt.elements["MVFR"] = 20
-	lt.elements["IFR"] = 20
-	lt.elements["CAT-I"] = 20
-	lt.elements["CAT-II"] = 20
-	lt.elements["CAT-III"] = 20
+	lt.elements["VFR"] = 1100
+	lt.elements["MVFR"] = 1110
+	lt.elements["IFR"] = 1120
+	lt.elements["CAT-I"] = 1130
+	lt.elements["CAT-II"] = 1140
+	lt.elements["CAT-III"] = 1150
 	return lt
 }

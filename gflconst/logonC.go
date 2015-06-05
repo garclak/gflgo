@@ -15,7 +15,7 @@ func (l *LogonC) Const(ref string) int {
 func NewLogonC() *LogonC {
 	lt := new(LogonC)
 	lt.elements = make(map[string]int)
-	lt.elements["normal"] = 10
-	lt.elements["admin"] = 20
+	lt.elements["normal"] = 300
+	lt.elements["admin"] = 310
 	return lt
 }

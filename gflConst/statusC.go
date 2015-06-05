@@ -15,10 +15,10 @@ func (l *StatusC) Const(ref string) int {
 func NewStatusC() *StatusC {
 	lt := new(StatusC)
 	lt.elements = make(map[string]int)
-	lt.elements["planning"] = 10
-	lt.elements["active"] = 20
-	lt.elements["aborted"] = 50
-	lt.elements["cancelled"] = 55
-	lt.elements["completed"] = 100
+	lt.elements["planning"] = 800
+	lt.elements["active"] = 810
+	lt.elements["aborted"] = 820
+	lt.elements["cancelled"] = 830
+	lt.elements["completed"] = 840
 	return lt
 }

@@ -15,10 +15,10 @@ func (l *FlightStatusC) Const(ref string) int {
 func NewFlightStatusC() *FlightStatusC {
 	lt := new(FlightStatusC)
 	lt.elements = make(map[string]int)
-	lt.elements["planning"] = 10
-	lt.elements["active"] = 20
-	lt.elements["aborted"] = 50
-	lt.elements["cancelled"] = 55
-	lt.elements["completed"] = 100
+	lt.elements["planning"] = 200
+	lt.elements["active"] = 210
+	lt.elements["aborted"] = 220
+	lt.elements["cancelled"] = 230
+	lt.elements["completed"] = 240
 	return lt
 }
