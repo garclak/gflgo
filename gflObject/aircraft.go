@@ -26,9 +26,9 @@ type Aircraft struct {
 	EngineCount : int
 	FuelCruisePPH : int
 	FuelMaxPPH : int
-    TotalFlightHours = time.Duration
-    MfgDate : time.Time
-    Notes : string
+	TotalFlightHours = time.Duration
+	MfgDate : time.Time
+    	Remarks : string
 }
 
 /*

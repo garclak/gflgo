@@ -8,15 +8,15 @@ type Pilot struct {
 	FirstName : string
 	Surname : string
 	Callsign : string
-    HighestRank : gflConst.RankC
-    DOB : time.Time
+    	HighestRank : gflConst.RankC
+    	DOB : time.Time
 	PasswordHash : string
 	PasswordSalt : string
 	Permissions : gflConst.LogonC
-    DayTotalHours : time.Duration
+    	DayTotalHours : time.Duration
 	NightTotalHours : time.Duration
 	TotalCompletedFlights : int
-    Notes : string
+    	Remarks : string
 }
 
 /*

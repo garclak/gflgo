@@ -1,9 +1,8 @@
 package gflObject
 
-import "github.com/garclak/gflgo/gflConst"
 import "time"
 
-type FlightRoute struct {
+type FlightLeg struct {
 	id : int
 	CalcMinutes : time.Duration
 	ActMinutes : time.Duration
@@ -27,8 +26,8 @@ func (l *LogonC) Const(ref string) int {
 }
 */
 
-func NewFlightRoute(inId int) *FlightRoute {
-	lt := new(FlightRoute)
+func NewFlightLeg(inId int) *FlightLeg {
+	lt := new(FlightLeg)
 	id := inId
 	return lt
 }
