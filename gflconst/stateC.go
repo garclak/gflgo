@@ -1,5 +1,32 @@
 package gflConst
 
+type StateC int
+
+const (
+    Start StateC = 500 + iota
+    Logon
+    Pilot
+    PilotList
+    PilotAircraft
+    Admin
+    LogList
+    LogReport
+    WaypointList
+    Waypoint
+    AircraftList
+    Aircraft
+    AirportList
+    Airport
+    RunwayList
+    Runway
+    Flight
+    FlightRoute
+    RouteList
+    Route
+    Exit
+)
+
+/*
 type StateC struct {
 	elements map[string]int
 }
@@ -40,3 +67,4 @@ func NewStateC() *StateC {
 
 	return lt
 }
+*/

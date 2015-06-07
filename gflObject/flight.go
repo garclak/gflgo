@@ -1,14 +1,17 @@
 package gflObject
 
+import "github.com/garclak/gflgo/gflConst"
+import "time"
+
 type Flight struct {
 	id : int
-	Status : int //StatusC
+	Status : gflConst.StatusC
 	FlightNotes : string
-	WxRating : int //WxC
-	OnDateUTC :  int
-	OffDateUTC : int
-	MinutesDay : int
-	MinutesNight : int
+	WxRating : gflConst.WxC
+	OnDateUTC :  time.Time
+	OffDateUTC : time.Time
+	DurationDay : time.Duration
+	DurationNight : time.Duration
 	DepCloudCeiling : int
 	DepVisDistance : int
 	DepOAT : int
@@ -45,7 +48,7 @@ type Flight struct {
 	FuelWeightAlt : int
 	FuelWeightWx : int
 	DebriefReport : string
-	IncidentRecorded : int //YesNoC
+	IncidentRecorded : bool
 	IncidentReport : string
 }
 

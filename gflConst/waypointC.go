@@ -1,5 +1,16 @@
 package gflConst
 
+type WaypointC int
+
+const (
+    Informal WaypointC = 800 + iota
+    Intersection
+    VOR
+    NDB
+    Airport
+)
+
+/*
 type WaypointC struct {
 	elements map[string]int
 }
@@ -22,3 +33,4 @@ func NewWaypointC() *WaypointC {
 	lt.elements["airport"] = 1040
 	return lt
 }
+*/

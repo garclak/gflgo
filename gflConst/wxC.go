@@ -1,5 +1,17 @@
 package gflConst
 
+type WxC int
+
+const (
+    VFR WxC = 900 + iota
+    MVFR
+    IFR
+    CAT1
+    CAT2
+    CAT3
+)
+
+/*
 type WxC struct {
 	elements map[string]int
 }
@@ -23,3 +35,4 @@ func NewWxC() *WxC {
 	lt.elements["CAT-III"] = 1150
 	return lt
 }
+*/

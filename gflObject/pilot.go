@@ -1,16 +1,22 @@
 package gflObject
 
+import "github.com/garclak/gflgo/gflConst"
+import "time"
+
 type Pilot struct {
 	id : int
 	FirstName : string
 	Surname : string
 	Callsign : string
+    HighestRank : gflConst.RankC
+    DOB : time.Time
 	PasswordHash : string
 	PasswordSalt : string
-	Permissions : int //logonC
-	MinutesDay : int
-	MinutesNight : int
-	TotalCompletedFlights : string
+	Permissions : gflConst.LogonC
+    DayTotalHours : time.Duration
+	NightTotalHours : time.Duration
+	TotalCompletedFlights : int
+    Notes : string
 }
 
 /*

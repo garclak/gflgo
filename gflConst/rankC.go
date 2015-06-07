@@ -1,5 +1,17 @@
 package gflConst
 
+type RankC int
+
+const (
+    Navigator RankC = 300 + iota
+    FlightEngineer
+    SecondOfficer
+    FirstOfficer
+    Captain
+)
+
+    
+/*
 type RankC struct {
 	elements map[string]int
 }
@@ -21,3 +33,4 @@ func NewRankC() *RankC {
 	lt.elements["captain"] = 530
 	return lt
 }
+*/

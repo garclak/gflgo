@@ -1,5 +1,21 @@
 package gflConst
 
+type AircraftC int
+
+const (
+    Glider AircraftC = 10 + iota
+    Light
+    Business
+    Cargo
+    Airliner
+    Military
+    Helicopter
+    Special
+)
+
+
+/*
+
 type AircraftC struct {
 	elements map[string]int
 }
@@ -25,3 +41,4 @@ func NewAircraftC() *AircraftC {
 	lt.elements["special"] = 80
 	return lt
 }
+*/

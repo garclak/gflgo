@@ -1,5 +1,16 @@
 package gflConst
 
+type EngineC int
+
+const (
+    Piston EngineC = 100 + iota
+    Turboprop
+    Turboshaft
+    Jet
+    Turbofan
+)
+
+/*
 type EngineC struct {
 	elements map[string]int
 }
@@ -22,3 +33,4 @@ func NewEngineC() *EngineC {
 	lt.elements["turbofan"] = 140
 	return lt
 }
+*/

@@ -1,5 +1,13 @@
 package gflConst
 
+type LogonC int
+
+const (
+    Normal LogonC = 200 + iota
+    Admin
+)
+
+/*
 type LogonC struct {
 	elements map[string]int
 }
@@ -19,3 +27,4 @@ func NewLogonC() *LogonC {
 	lt.elements["admin"] = 310
 	return lt
 }
+*/

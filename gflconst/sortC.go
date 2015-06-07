@@ -1,5 +1,13 @@
 package gflConst
 
+type SortC int
+
+const (
+    ASC SortC = 400 + iota
+    DESC
+)
+
+/*
 type SortC struct {
 	elements map[string]int
 }
@@ -19,3 +27,4 @@ func NewSortC() *SortC {
 	lt.elements["desc"] = 610
 	return lt
 }
+*/

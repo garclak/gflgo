@@ -1,12 +1,15 @@
 package gflObject
 
+import "github.com/garclak/gflgo/gflConst"
+import "time"
+
 type PilotAircraft struct {
 	id : int
-	Rank : string
-	CompletedFlights : string
-	MinutesDay : int
-	MinutesNight : int
-	WxCategoryLimit : int //Todo: Const
+	Rank : gflConst.RankC
+	CompletedFlights : int
+	DayTotalHours : time.Duration
+	NightTotalHours : time.Duration
+	WxRating : gflConst.WxC
 	TotalCargoWeight : int
 	TotalPAXWeight : int
 	TotalPAXCount : int

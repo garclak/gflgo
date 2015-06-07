@@ -1,11 +1,14 @@
 package gflObject
 
+import "github.com/garclak/gflgo/gflConst"
+import "time"
+
 type Aircraft struct {
 	id : int
 	Manufacturer : string
 	Model : string
 	Variant : string
-	Type :  int //todo: Const
+	Type :  gflConst.AircraftC
 	VMinOperating : int
 	VRotation : int
 	VClimb : int
@@ -19,10 +22,13 @@ type Aircraft struct {
 	AltitudeMax : int
 	MaxRangeNm : int
 	MaxEnduranceMinutes : int
-	EngineType : int //todo: Const
+	EngineType : gflConst.EngineC
 	EngineCount : int
 	FuelCruisePPH : int
 	FuelMaxPPH : int
+    TotalFlightHours = time.Duration
+    MfgDate : time.Time
+    Notes : string
 }
 
 /*
