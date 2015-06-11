@@ -4,14 +4,15 @@ type TypeC int
 
 const (
     Pilot TypeC = 700 + iota
-    pilotAircraft
+    PilotAircraft
+    Aircraft 
     Flight
-    FlightRoute
+    FlightLeg
+    RouteMark
+    RouteInfo
     Waypoint
     Airport
-    Aircraft
     Runway
-    Route
 )
 
 /*

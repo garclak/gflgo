@@ -1,11 +1,10 @@
 package gflObject
 
-type RouteInfo struct {
+import "github.com/garclak/gflgo/gflConst"
+
+type SearchParam struct {
 	id : int
-	Description : string
-	DistanceNm : int
-	MinAltitude : int
-	Remarks : string
+	Type : gflConst.TypeC
 }
 
 /*
@@ -16,7 +15,6 @@ func (l *LogonC) Const(ref string) int {
 		return -1
 	}
 }
-*/
 
 func NewRouteInfo(inId int) *RouteInfo {
 	lt := new(RouteInfo)
@@ -24,3 +22,4 @@ func NewRouteInfo(inId int) *RouteInfo {
 	return lt
 }
 
+*/

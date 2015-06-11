@@ -28,7 +28,7 @@ type Aircraft struct {
 	FuelMaxPPH : int
 	TotalFlightHours = time.Duration
 	MfgDate : time.Time
-    	Remarks : string
+    Remarks : string
 }
 
 /*

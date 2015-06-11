@@ -1,8 +1,5 @@
 package gflObject
 
-import "github.com/garclak/gflgo/gflConst"
-import "time"
-
 type RouteMark struct {
 	id : int
 	SeqNo : int

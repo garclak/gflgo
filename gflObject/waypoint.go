@@ -1,7 +1,6 @@
 package gflObject
 
 import "github.com/garclak/gflgo/gflConst"
-import "time"
 
 type Waypoint struct {
 	id : int
@@ -12,7 +11,7 @@ type Waypoint struct {
 	LatDeg : int
 	LatMin : int
 	LatSec : int
-	LongHemi :gflConst.HemiC
+	LongHemi : gflConst.HemiC
 	LongDeg : int
 	LongMin : int
 	LongSec : int
