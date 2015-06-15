@@ -3,27 +3,27 @@ package gflConst
 type StateC int
 
 const (
-    Start StateC = 500 + iota
-    Logon
-    Pilot
-    PilotList
-    PilotAircraft
-    Admin
-    LogList
-    LogReport
-    WaypointList
-    Waypoint
-    AircraftList
-    Aircraft
-    AirportList
-    Airport
-    RunwayList
-    Runway
-    Flight
-    FlightRoute
-    RouteList
-    Route
-    Exit
+    StartState StateC = 500 + iota
+    LogonState
+    PilotState
+    PilotListState
+    PilotAircraftState
+    AdminState
+    LogListState
+    LogReportState
+    WaypointListState
+    WaypointState
+    AircraftListState
+    AircraftState
+    AirportListState
+    AirportState
+    RunwayListState
+    RunwayState
+    FlightState
+    FlightRouteState
+    RouteListState
+    RouteState
+    ExitState
 )
 
 /*

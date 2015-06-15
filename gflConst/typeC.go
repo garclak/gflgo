@@ -3,16 +3,16 @@ package gflConst
 type TypeC int
 
 const (
-    Pilot TypeC = 700 + iota
-    PilotAircraft
-    Aircraft 
-    Flight
-    FlightLeg
-    RouteMark
-    RouteInfo
-    Waypoint
-    Airport
-    Runway
+    PilotObject TypeC = 700 + iota
+    PilotAircraftObject
+    AircraftObject
+    FlightObject
+    FlightLegObject
+    RouteMarkObject
+    RouteInfoObject
+    WaypointObject
+    AirportObject
+    RunwayObject
 )
 
 /*
